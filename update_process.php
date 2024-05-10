@@ -30,7 +30,7 @@ if(isset($_POST['update'])) {
     $sql = "UPDATE emp SET name='$name', age='$age', gender='$gender', city='$city', email='$email', phone='$phone', worktype='$worktype', address='$address' WHERE id='$id'";
     
     if(mysqli_query($con, $sql)) {
-        header("Location: readdata.php"); // Redirect to readdata.php after successful update
+        header("Location: index.php"); // Redirect to index.php after successful update
         exit();
     } else {
         echo "Error updating record: " . mysqli_error($con);

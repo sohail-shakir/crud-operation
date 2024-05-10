@@ -17,13 +17,8 @@ $query="DELETE FROM emp WHERE id='$id' ";
 $data=mysqli_query($con,$query);
 if($data)
 {
-    echo "Record Deleted";
-    ?>
-    <meta http-equiv="refresh" content ="0; url =http://localhost/crud/crud/readdata.php" />
-    <?php 
-
-
-
+    header("Location: index.php"); // Redirect to index.php after successful update
+    exit();
 }
 else{
     echo "Failed to Delete";
