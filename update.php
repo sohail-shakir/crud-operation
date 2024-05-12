@@ -1,17 +1,8 @@
 <?php
-// Set connection variables
-$server = "localhost";
-$username = "root";
-$password = "";
-$database = "emp"; // Assuming your database name is emp
+include 'connection.php';
+?>
+<?php
 
-// Create a database connection
-$con = mysqli_connect($server, $username, $password, $database);
-
-// Check for connection success
-if (!$con) {
-    die("Connection to the database failed: " . mysqli_connect_error());
-}
 
 // Check if ID parameter is present in the URL
 if(isset($_GET['id'])) {
@@ -108,6 +99,7 @@ mysqli_close($con);
         
     </div>
 
+    <script src="script.js"></script>
 
 </body>
 </html>

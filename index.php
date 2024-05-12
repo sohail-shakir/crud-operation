@@ -74,7 +74,7 @@ $result = mysqli_query($con, $sql);
             background-color: #f2f2f2;
         }
         .container {
-            max-width: 900px;
+            max-width: 90vw !important;
             margin: 0 auto;
             padding: 20px;
             
@@ -107,7 +107,7 @@ $result = mysqli_query($con, $sql);
     }
     i{
         color: black;
-        margin: 5px;
+        margin: 2px;
     }
     .deli{
         color:red;

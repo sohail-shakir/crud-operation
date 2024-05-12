@@ -11,12 +11,12 @@
     }
     .container {
         background: #fff;
-        padding: 30px;
+        padding: 20px;
         border-radius: 20px;
         box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-        width: 100%;
+        width: 90vw !important;
         max-width: 600px;
-        height: 80vh;
+        height: 100vh;
       
         border: 1px solid #ccc;
         border-top: 3px solid #ccc;
@@ -264,7 +264,23 @@ box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
 color:#fff;
 } */
 
+.error{
+         
+    color: red;
+   
+}
+input{
+ outline: 
+}
 
+
+.error-input{
+ outline:1px solid red;
+ z-index: 1;
+}
+.correct-input{
+ outline:1px solid green;
+}
 
 
 
